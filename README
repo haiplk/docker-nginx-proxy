@@ -1,4 +1,4 @@
-# Create docker network
+# Create Network
 
 docker network create nginx-proxy
 
