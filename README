@@ -1,0 +1,7 @@
+# Create docker network
+
+docker network create nginx-proxy
+
+# Run docker via proxy
+docker run -d --name blog --expose 80 --net nginx-proxy -e VIRTUAL_HOST=blog.DOMAIN.TLD wordpress
+
