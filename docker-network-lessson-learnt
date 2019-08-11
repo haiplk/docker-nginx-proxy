@@ -1,0 +1,13 @@
+$ docker network create simple-network
+
+Then I connect the containers to the network:
+
+Example: docker network connect [network name] [container name]
+
+$ docker network connect simple-network sql1
+$ docker network connect simple-network web
+$ docker network connect simple-network api
+
+Then I inspect the network in order to get the ip of sql1
+
+$ docker network inspect simple-network
